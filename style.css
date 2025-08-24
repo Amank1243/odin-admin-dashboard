@@ -5,8 +5,8 @@ body {
 
 
 :root {
-
     font-family: Arial, Helvetica, sans-serif;
+    
     --icon-height: 24px;
 }
 
@@ -50,11 +50,10 @@ body {
 
     align-items: center;
     gap: 14px;
-    padding-top: 16px;
     padding-left: 24px;
 }
 
-/* TOP RIGHT HEADER */
+/* HEADER TOP RIGHT */
 .header .top-right {
     display: flex;
 
@@ -81,13 +80,14 @@ body {
 
 /* HEADER BOTTOM LEFT */
 .header .bottom-left {
-    grid-row: end;
+    grid-row: 2;
 
     gap: 12px;
     align-items: center;
     display: flex;
 
     padding-bottom: 12px;
+    padding-left: 24px;
 }
 
 .header .bottom-left img {
@@ -113,15 +113,33 @@ body {
 
 /* HEADER BOTTOM RIGHT */
 .header .bottom-right {
-    grid-column: end;
-    grid-row: end;
+    display: flex;
+    flex-direction: row;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-right: 24px;
+    gap: 0.5em;
+
+    
+
+    
 }
 
 .header .bottom-right button {
-    background-color: rgba(0, 110, 255, 0.938);
+    background-color: rgba(0, 153, 255, 0.938);
     color: white;
 
-    border-radius: 6px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 8px 24px;
+
+    font-weight: bold;
+
 
 }
 
@@ -129,6 +147,31 @@ body {
     background-color: rgb(3, 163, 255);
     grid-row: 1 / end;
     grid-column: 1;
+
+    padding-left: 24px;
+}
+
+.sidebar img {
+    height: 24px;
+}
+
+.sidebar div div {
+    display: flex;
+    flex-direction: row;
+
+    align-items:center;
+}
+
+.sidebar div div a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar .dashboard {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
 }
 
 .main-content {
