@@ -59,11 +59,11 @@ body {
 
     grid-column: 2;
 
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     gap: 1em;
-    padding-right: 24px;
+    
 }
 
 .header .top-right .bell {
@@ -123,11 +123,7 @@ body {
     justify-content: flex-end;
 
     padding-right: 24px;
-    gap: 0.5em;
-
-    
-
-    
+    gap: 1.5em;
 }
 
 .header .bottom-right button {
@@ -139,10 +135,10 @@ body {
     padding: 8px 24px;
 
     font-weight: bold;
-
-
+    font-size: 14px;
 }
 
+/* SIDEBAR */
 .sidebar {
     background-color: rgb(3, 163, 255);
     grid-row: 1 / end;
@@ -160,11 +156,16 @@ body {
     flex-direction: row;
 
     align-items:center;
+    gap: 24px;
+    padding-bottom: 18px;
 }
 
 .sidebar div div a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .sidebar .dashboard {
@@ -172,6 +173,12 @@ body {
     flex-direction: row;
 
     align-items: center;
+    gap: 14px;
+    padding-bottom: 26px;
+}
+
+.sidebar .end {
+    padding-top: 36px;
 }
 
 .main-content {
