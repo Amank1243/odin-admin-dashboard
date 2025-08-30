@@ -8,8 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     
     --icon-height: 24px;
-
     --main-left-padding: 24px;
+    --main-left-card-margin: 18px;
 
 }
 
@@ -246,4 +246,33 @@ body {
 
 .main-content .left .row-6 {
     grid-row: -2 / -1;
+}
+
+/* Card styling */
+
+.main-content .left .card h5 {
+    margin-left: var(--main-left-card-margin);
+    margin-bottom: 0px;
+}
+
+.main-content .left .card p {
+    font-size: 10px;
+
+    margin-left: var(--main-left-card-margin);
+    margin-top: 0;
+    padding-right: 30px;
+}
+
+.main-content .card img {
+    height: 16px;
+}
+
+.main-content .card .icons {
+    display: flex;
+
+    gap: 1em;
+    
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
