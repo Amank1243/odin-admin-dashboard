@@ -20,7 +20,7 @@ body {
     width: 100vw;
 
     display: grid;
-    grid-template:  1.25fr repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template:  repeat(5, 1fr) / repeat(4, 1fr);
 }
 
 .header {
@@ -189,9 +189,10 @@ body {
     padding-top: 36px;
 }
 
+/* Main content */
 .main-content {
     display: grid;
-    grid-template-columns: 2fr   1fr;
+    grid-template-columns: 2fr   0.75fr;
 
     background-color: rgb(221, 221, 221);
     grid-row: 2 / end;
@@ -218,7 +219,11 @@ body {
 
 .main-content .left .card {
     height: 20vh;
-    width: 22vw;
+    width: 24vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     background-color: white;
 
@@ -259,7 +264,8 @@ body {
     font-size: 10px;
 
     margin-left: var(--main-left-card-margin);
-    margin-top: 0;
+    margin-top: -3vh;
+    padding-top: 0;
     padding-right: 30px;
 }
 
@@ -268,11 +274,33 @@ body {
 }
 
 .main-content .card .icons {
+
     display: flex;
 
     gap: 1em;
     
-    align-items: center;
     justify-content: flex-end;
     margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* Main Content  Sidebar */
+
+.right .card {
+    height: 33vh;
+    width: 16vw;  
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    
+    border-radius: 10px;    
+    
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.right .card.accounts {
+    height: 28.5vh;
 }
