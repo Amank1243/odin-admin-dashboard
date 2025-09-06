@@ -330,7 +330,7 @@ body {
 }
 
 .right .card.bottom {
-    height: 28.5vh;
+    height: 29.55vh;
 }
 
 .right .card.bottom img {
@@ -339,4 +339,14 @@ body {
 
 .right .card.bottom .account {
     display: flex;
+
+    margin-left: var(--main-left-card-margin);
+    margin-bottom: 4px;
+}
+
+.right .card.bottom p {
+    margin-left: 6px;
+
+    color: rgb(0, 0, 0);
+
 }
