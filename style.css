@@ -10,6 +10,7 @@ body {
     --icon-height: 24px;
     --main-left-padding: 24px;
     --main-left-card-margin: 18px;
+    --main-right-card-margin: 22px;
 
 }
 
@@ -149,6 +150,7 @@ body {
 /* SIDEBAR */
 .sidebar {
     background-color: rgb(3, 163, 255);
+
     grid-row: 1 / end;
     grid-column: 1;
 
@@ -256,15 +258,17 @@ body {
 /* Card styling */
 
 .main-content .left .card h5 {
+    font-size: 14px;
+
     margin-left: var(--main-left-card-margin);
     margin-bottom: 0px;
 }
 
 .main-content .left .card p {
-    font-size: 10px;
+    font-size: 12px;
 
     margin-left: var(--main-left-card-margin);
-    margin-top: -3vh;
+    margin-top: -1vh;
     padding-top: 0;
     padding-right: 30px;
 }
@@ -287,20 +291,52 @@ body {
 /* Main Content  Sidebar */
 
 .right .card {
-    height: 33vh;
-    width: 16vw;  
+    height: 32vh;
+    width: 16vw;
 
     display: flex;
-
     flex-direction: column;
-    justify-content: space-between;
+
+    justify-content: center;
+
     background-color: white;
-    
-    border-radius: 10px;    
-    
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+
+    border-radius: 10px;    
 }
 
-.right .card.accounts {
+.right .card p {
+    color: rgb(160, 160, 160);
+
+    font-size: 10px;
+
+    margin: 4px 0 4px;
+    margin-left: var(--main-left-card-margin);
+}
+
+.right .card h6 {
+    margin: 0;
+    margin-left: var(--main-left-card-margin);
+
+    font-size: 10px;
+}
+
+.right .card hr {
+    margin: 0.25em;
+
+    width: 14vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.right .card.bottom {
     height: 28.5vh;
+}
+
+.right .card.bottom img {
+    height: 6vh;
+}
+
+.right .card.bottom .account {
+    display: flex;
 }
