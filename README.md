@@ -1,0 +1,3 @@
+Warning: Do NOT try to look at this site with a phone, or by zooming in or out.
+
+You have been warned...
